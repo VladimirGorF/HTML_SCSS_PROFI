@@ -1,0 +1,17 @@
+<svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="23" fill="#E5E5E5"/>
+<g id="tablet 768_index" clip-path="url(#clip0_188_673)">
+<rect width="768" height="2976" transform="translate(-567 -31)" fill="white"/>
+<g id="Header">
+<path id="Rectangle 25" d="M201 -31H-567V43H201V-31Z" fill="#222222"/>
+</g>
+<g id="Button copy">
+<path id="Forma 1" d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_188_673">
+<rect width="768" height="2976" fill="white" transform="translate(-567 -31)"/>
+</clipPath>
+</defs>
+</svg>
