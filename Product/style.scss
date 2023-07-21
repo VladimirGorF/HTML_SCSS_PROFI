@@ -1,6 +1,11 @@
 $colorSmallItemsRed: #F16D7F;
 
-
+@mixin fontText() {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 @keyframes vibrate-1 {
     0% {
@@ -86,13 +91,13 @@ a {
     padding-top: 28.21px;
     padding-bottom: 20px;
     transition: 0.5s;
-    color: #F16D7F;
+    color: $colorSmallItemsRed;
 
 }
 
 .image_header2:hover {
     transform: scale(1.3);
-    color: #F16D7F;
+    color: $colorSmallItemsRed;
 }
 
 .header_right {
@@ -136,7 +141,7 @@ a {
     justify-content: center;
     align-items: center;
     color: #FFF;
-    background-color: #F16D7F;
+    background-color: $colorSmallItemsRed;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -282,6 +287,14 @@ a {
             justify-content: center;
             gap: 42px;
 
+            &__m {
+                summary{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                }
+            }
+
         }
 
         &__add {
@@ -377,11 +390,8 @@ a {
 
 
 .subtitle_menu {
-    color: #F16D7F;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include fontText();
+    color: $colorSmallItemsRed;
     margin-bottom: 12px;
     margin-left: 32px;
 }
@@ -389,10 +399,7 @@ a {
 
 .goods {
     color: #6F6E6E;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include fontText();
     text-decoration: none;
     margin-bottom: 11px;
     margin-left: 53.5px;
@@ -460,7 +467,7 @@ a {
 }
 
 .mid_title_tit {
-    color: #F16D7F;
+    color: $colorSmallItemsRed;
     font-size: 24px;
 }
 
@@ -481,10 +488,7 @@ a {
     display: flex;
     justify-content: center;
     color: #9F9F9F;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include fontText();
     margin-bottom: 48px;
 }
 
@@ -547,10 +551,7 @@ a {
 
 .add {
     color: #FFF;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include fontText();
 }
 
 .fet_title {
@@ -718,10 +719,7 @@ a {
 
 .enter_text {
     color: #222224;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include fontText();
     background-color: #E1E1E1;
     height: 49px;
     width: 256px;
@@ -734,10 +732,7 @@ a {
 .submit {
     color: #FFF;
     text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include fontText();
     background-color: #F16D7F;
     height: 49px;
     border-radius: 0px 20px 20px 0px;

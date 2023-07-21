@@ -245,6 +245,11 @@ a {
   justify-content: center;
   gap: 42px;
 }
+.product__descr__menu__m summary {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .product__descr__add {
   width: 212px;
   height: 48px;
@@ -325,11 +330,11 @@ a {
 }
 
 .subtitle_menu {
-  color: #F16D7F;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #F16D7F;
   margin-bottom: 12px;
   margin-left: 32px;
 }
