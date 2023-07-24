@@ -1,0 +1,36 @@
+.catalog {
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+
+    .details {
+        width: 100px;
+        display: flex;justify-content: center;
+
+        &[open] .summary {
+            color: red;
+
+        }
+
+        .summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .summary{
+            display: flex;
+
+        }
+
+        .details1{
+            position: absolute;
+            left: 100px;
+           
+        }
+
+    }
+
+
+
+}
