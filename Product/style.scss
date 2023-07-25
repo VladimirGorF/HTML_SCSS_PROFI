@@ -1020,7 +1020,7 @@ a {
 
 
 
-
+// media -------------------------------------------------------------------
 
 @media(max-width: 1140px) and (min-width:768px) {
 
@@ -1045,12 +1045,20 @@ a {
 
     .box {
         .catalog {
+            margin-left: 16px;
+
             &__filter {
-                top: 10px;
+                
             }
 
             &__search {
-                top: 70px;
+               
+                left: 41%;
+                transform: none;
+
+                &__menu__m {
+                    width: 160px;
+                }
             }
         }
     }
@@ -1077,9 +1085,14 @@ a {
 
     .feture_box {
         display: grid;
-        grid-template-columns: 358px;
+        grid-template-columns: repeat(2, 358px);
         gap: 16px;
+        .last_item{
+            display: none;
+        }
     }
+
+
 
     .footer_top {
         flex-direction: column;
@@ -1141,6 +1154,18 @@ a {
     .profile,
     .basket_box {
         display: none;
+    }
+
+    .box {
+        .catalog {
+            &__filter {
+                top: 10px;
+            }
+
+            &__search {
+                top: 70px;
+            }
+        }
     }
 
     .top_content {
@@ -1278,11 +1303,24 @@ a {
         min-height: 363px;
     }
 
+    .box {
+        .catalog {
+            &__filter {
+                top: 10px;
+            }
+
+            &__search {
+                top: 70px;
+            }
+        }
+    }
+
+
     // не работает!!!!!!!!!!
     .product {
         &__top {
             flex-direction: column;
-            gap: 15%;
+            justify-content: center;
         }
     }
 
