@@ -352,7 +352,7 @@ a {
 }
 .box .catalog__search__menu__m summary {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
   position: relative;
 }
