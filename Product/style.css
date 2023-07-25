@@ -277,20 +277,12 @@ a {
   background-color: #FFF;
   flex-direction: column;
   list-style-type: none;
-  margin-top: 9px;
-  margin-bottom: 9px;
-  margin-left: 9px;
-  margin-right: 57px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-.box .product__descr__menu__m .menu .list {
-  margin-top: 9px;
   margin-bottom: 9px;
-  margin-left: 9px;
-  margin-right: 57px;
+  margin-left: 10px;
 }
 .box .product__descr__menu__m .menu__checkbox {
   padding-top: 10px;
@@ -298,7 +290,7 @@ a {
   gap: 10px;
   margin-top: 9px;
   margin-bottom: 9px;
-  margin-left: 9px;
+  margin-left: 19px;
   margin-right: 57px;
   font-size: 14px;
   font-style: normal;
@@ -376,7 +368,7 @@ a {
   list-style-type: none;
   margin-top: 9px;
   margin-bottom: 9px;
-  margin-left: 9px;
+  margin-left: 19px;
   margin-right: 57px;
   font-size: 14px;
   font-style: normal;
@@ -386,7 +378,7 @@ a {
 .box .catalog__search__menu__m .menu .list {
   margin-top: 9px;
   margin-bottom: 9px;
-  margin-left: 9px;
+  margin-left: 19px;
   margin-right: 57px;
 }
 .box .catalog__search__menu__m .menu__checkbox {
@@ -395,7 +387,7 @@ a {
   gap: 10px;
   margin-top: 9px;
   margin-bottom: 9px;
-  margin-left: 9px;
+  margin-left: 19px;
   margin-right: 57px;
   font-size: 14px;
   font-style: normal;
@@ -941,10 +933,10 @@ a {
   .top_subtitle {
     font-size: 24px;
   }
-  .catalog__filter {
+  .box .catalog__filter {
     top: 10px;
   }
-  .catalog__search {
+  .box .catalog__search {
     top: 70px;
   }
   .middle {

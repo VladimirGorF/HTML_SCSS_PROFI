@@ -4,7 +4,7 @@ $colorSmallItemsBlack: #6F6E6E;
 @mixin paddingSort() {
     margin-top: 9px;
     margin-bottom: 9px;
-    margin-left: 9px;
+    margin-left: 19px;
     margin-right: 57px;
 }
 
@@ -361,12 +361,11 @@ a {
                         background-color: #FFF;
                         flex-direction: column;
                         list-style-type: none;
-                        @include paddingSort();
                         @include fontText();
+                        margin-bottom: 9px;
+                        margin-left: 10px;
 
-                        .list {
-                            @include paddingSort();
-                        }
+
 
                         &__checkbox {
                             padding-top: 10px;
@@ -376,6 +375,7 @@ a {
                             @include fontText();
 
                         }
+
                     }
 
                 }
@@ -1043,18 +1043,19 @@ a {
     }
 
 
-    .box{
-        .catalog{
+    .box {
+        .catalog {
             &__filter {
                 top: 10px;
             }
+
             &__search {
                 top: 70px;
             }
-        } 
+        }
     }
-   
-    
+
+
     .middle {
         display: grid;
         grid-template-columns: repeat(3, 231.973px);
