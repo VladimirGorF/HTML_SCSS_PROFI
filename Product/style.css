@@ -164,18 +164,18 @@ a {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  color: #636363;
+}
+.box .product__top__bread-crumbs :not(:last-child)::after {
+  content: " /";
+}
+.box .product__top__bread-crumbs :last-child {
+  font-weight: bold;
+  color: #F16D7F;
 }
 .box .product__top__bread-crumbs a {
   color: #636363;
 }
-.box .product__top__bread-crumbs a::after {
-  content: " /";
-}
 .box .product__top__bread-crumbs a:hover {
-  color: #F16D7F;
-}
-.box .product__top__bread-crumbs span:hover {
   color: #F16D7F;
 }
 .box .product__image {
@@ -318,8 +318,10 @@ a {
 }
 .box .catalog {
   height: 133px;
-  margin-left: 135px;
   position: relative;
+}
+.box .catalog .m2 {
+  width: 70px;
 }
 .box .catalog__search {
   display: flex;
@@ -341,7 +343,7 @@ a {
   transform: translateX(-50%);
 }
 .box .catalog__search__menu__m {
-  width: 180px;
+  width: 160px;
 }
 .box .catalog__search__menu__m[open] .menu {
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
@@ -352,11 +354,15 @@ a {
 }
 .box .catalog__search__menu__m summary {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   position: relative;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.box .catalog__search__menu__m summary::-webkit-details-marker {
+.box .catalog__search__menu__m __mobile summary::-webkit-details-marker {
   display: none;
 }
 .box .catalog__search__menu__m .menu {
@@ -395,13 +401,16 @@ a {
   line-height: normal;
 }
 .box .catalog__filter {
-  width: 360px;
-  background-color: #FFFFFF;
+  width: 300px;
   position: absolute;
+  z-index: 1;
   top: 40px;
+  left: 23%;
+  transform: translate(-50%);
 }
 .box .catalog__filter[open] {
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+  background-color: #FFFFFF;
 }
 .box .catalog__filter[open] .catalog__filter__summary {
   color: #F16D7F;
@@ -423,6 +432,10 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-weight: 600;
+}
+.box .catalog__filter__summary .mobile {
+  display: none;
 }
 .box .catalog__filter__subject:last-child {
   margin-bottom: 24px;
@@ -964,7 +977,7 @@ a {
     grid-template-columns: repeat(2, 358px);
     gap: 16px;
   }
-  .feture_box .last_item {
+  .feture_items:last-child {
     display: none;
   }
   .footer_top {
@@ -1016,11 +1029,33 @@ a {
   .basket_box {
     display: none;
   }
+  .box .catalog {
+    height: 81px;
+  }
   .box .catalog__filter {
-    top: 10px;
+    top: 20px;
+    left: 15%;
+    transform: translate(-50%);
+  }
+  .box .catalog__filter__summary .descktop {
+    display: none;
+  }
+  .box .catalog__filter__summary .mobile {
+    display: block;
   }
   .box .catalog__search {
-    top: 70px;
+    top: 30px;
+    left: 65%;
+  }
+  .box .catalog__search .m2 {
+    width: 45px;
+  }
+  .box .catalog__search__menu__m {
+    width: 120px;
+  }
+  .box .catalog__search__menu__m summary {
+    font-size: 12px;
+    gap: 5px;
   }
   .top_content {
     min-height: 363px;
@@ -1108,8 +1143,13 @@ a {
     align-items: center;
     gap: 15px;
   }
+  .header_left {
+    gap: 21px !important;
+    margin-left: 40px;
+  }
   .header_right {
-    gap: 0;
+    gap: 10px !important;
+    margin-right: 50px;
   }
   .rectangle {
     height: 61px;
@@ -1129,15 +1169,44 @@ a {
   .top_content {
     min-height: 363px;
   }
+  .box .catalog {
+    margin-left: 0px;
+    height: 81px;
+  }
   .box .catalog__filter {
-    top: 10px;
+    width: 100px;
+    top: 20px;
+    left: 15%;
+    transform: translate(-50%);
+  }
+  .box .catalog__filter__summary .descktop {
+    display: none;
+  }
+  .box .catalog__filter__summary .mobile {
+    display: block;
   }
   .box .catalog__search {
-    top: 70px;
+    top: 30px;
+    left: 75%;
+    gap: 5px;
+  }
+  .box .catalog__search .m2 {
+    width: 45px;
+  }
+  .box .catalog__search__menu__m {
+    width: 120px;
+  }
+  .box .catalog__search__menu__m summary {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .box .catalog__search__menu__m .menu {
+    margin-left: 0;
   }
   .product__top {
     flex-direction: column;
-    justify-content: center;
+    justify-content: center !important;
+    gap: 15% !important;
   }
   .middle {
     display: grid;
