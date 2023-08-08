@@ -4,4 +4,5 @@ Also in the children's menu section (in the upper right corner) there is a small
 Enjoy!
 
 Net-version of project you can see here: https://shop-gvf.site.
+
 Page of the game: https://shop-gvf.site/game.html
