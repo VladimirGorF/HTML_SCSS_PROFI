@@ -454,10 +454,10 @@ a {
         &__search {
             display: flex;
             position: absolute;
-            z-index: 1;
+            z-index: 2;
             top: 50px;
             left: 50%;
-            transform: translate(-50%);
+            transform: translate(-46%);
 
             &__menu {
                 text-align: center;
@@ -545,12 +545,12 @@ a {
         }
 
         &__filter {
-            width: 300px;
+            width: 365px;
             position: absolute;
             z-index: 1;
             top: 40px;
-            left: 23%;
-            transform: translate(-50%);
+            left: 50%;
+            transform: translate(-160%);
 
 
             &[open] {
@@ -575,7 +575,7 @@ a {
                 align-items: center;
                 margin-top: 13px;
                 margin-bottom: 24px;
-                margin-left: 16px;
+                margin-left: 23px;
                 gap: 11px;
                 @include fontText();
                 font-weight: 600;
@@ -1315,16 +1315,18 @@ a {
 
         .source {
             color: black;
+
             &:hover {
                 color: $colorSmallItemsRed;
                 font-weight: bold;
             }
-            &:visited{
+
+            &:visited {
                 font-weight: bold;
             }
         }
 
-       
+
 
 
         .page__numbers {
@@ -1524,6 +1526,7 @@ a {
 .icon_box:hover {
     background-color: #F16D7F;
 }
+
 .icon_box:hover path {
     fill: white;
 }
@@ -1558,12 +1561,17 @@ a {
             margin-left: 16px;
 
             &__search {
-                left: 41%;
-                transform: none;
+                width: 740px;
+                transform: translate(8%);
 
                 &__menu__m {
                     width: 160px;
                 }
+            }
+
+            &__filter {
+                transform: translate(-108%);
+
             }
         }
     }
@@ -1723,15 +1731,6 @@ a {
         margin-bottom: 64px;
         font-size: 18px;
     }
-
-    // .enter_text {
-    //     width: 200px;
-    // }
-
-    // .submit {
-    //     width: 95px;
-    // }
-
 }
 
 
@@ -1790,9 +1789,9 @@ a {
             height: 81px;
 
             &__filter {
-                width: 200px;
+                width: 400px;
                 top: 20px;
-                left: 15%;
+                left: 50%;
                 transform: translate(-50%);
 
                 &__summary {
@@ -1814,8 +1813,9 @@ a {
 
             &__search {
                 top: 30px;
-                left: 75%;
                 gap: 5px;
+                left: 50%;
+                transform: translate(-15%);
 
                 .m2 {
                     width: 45px;
@@ -2094,13 +2094,13 @@ a {
             height: 81px;
 
             &__filter {
-                width: 140px;
+                width: 358px;
                 top: 20px;
-                left: 15%;
+                left: 50%;
                 transform: translate(-50%);
 
                 &__summary {
-                    margin-left: 23px;
+                    margin-left: 2px;
 
                     .descktop {
                         display: none;
@@ -2119,9 +2119,11 @@ a {
             }
 
             &__search {
+                width: 400px;
                 top: 30px;
-                left: 75%;
+                left: 50%;
                 gap: 5px;
+                transform: translate(-12%);
 
                 .m2 {
                     width: 45px;
@@ -2145,7 +2147,7 @@ a {
                         }
 
                         .me3 {
-                            margin-left: -40px;
+                            margin-left: -50px;
                         }
 
                     }
