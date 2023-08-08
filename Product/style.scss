@@ -1,3 +1,6 @@
+@import 'hunt';
+
+
 $colorSmallItemsRed: #F16D7F;
 $colorSmallItemsBlack: #6F6E6E;
 
@@ -488,6 +491,14 @@ a {
                         align-items: center;
                         position: relative;
                         @include fontText();
+
+                        &:hover {
+                            color: $colorSmallItemsRed;
+                        }
+
+                        &:hover path {
+                            fill: $colorSmallItemsRed;
+                        }
                     }
 
                     summary::-webkit-details-marker {
@@ -516,6 +527,14 @@ a {
                             @include fontText();
 
                         }
+                    }
+
+                    .me2 {
+                        margin-left: -30px;
+                    }
+
+                    .me3 {
+                        margin-left: -20px;
                     }
 
                 }
@@ -565,6 +584,17 @@ a {
                     display: none;
                 }
             }
+
+            &__summary:hover {
+                color: $colorSmallItemsRed;
+            }
+
+            &__summary:hover path {
+                fill: $colorSmallItemsRed;
+            }
+
+
+
 
             &__subject:last-child {
                 margin-bottom: 24px;
@@ -859,8 +889,10 @@ a {
 // Стили REGISTRATION -------------------------------------------------
 .registration {
     display: flex;
+    justify-content: center;
     gap: 128px;
-    margin: 64px 230px 113px 230px;
+    margin: 64px 16px 113px 16px;
+
 
     &__left {
 
@@ -883,7 +915,7 @@ a {
                 border: 1px solid #A4A4A4;
                 margin-bottom: 20px;
                 box-sizing: border-box;
-                padding: 13px 17px 16px 17.24px;
+                padding: 13px 37px 16px 17.24px;
             }
 
             .input::-webkit-input-placeholder {
@@ -897,13 +929,14 @@ a {
             .radio {
                 display: flex;
                 gap: 10px;
+                margin-top: 11px;
+                margin-bottom: 33px;
 
                 .sex {
                     color: #000;
                     @include fontCart();
                     font-size: 11px;
-                    margin-top: 34px;
-                    margin-bottom: 31px;
+
                 }
 
             }
@@ -943,6 +976,8 @@ a {
     }
 
     &__right {
+        max-width: 652px;
+
 
         .title {
             @include fontRegistration();
@@ -967,10 +1002,6 @@ a {
 
     }
 }
-
-
-
-
 
 
 .top_content {
@@ -1253,13 +1284,70 @@ a {
 }
 
 .feture__button:hover .button {
-    color: black;
+    color: white;
 }
 
 .vibrate-1 {
     animation: vibrate-1 0.3s linear infinite both;
     animation-iteration-count: infinite;
 }
+
+//Пагинация 
+.pagination {
+
+    .pageBox {
+        width: 283px;
+        height: 43px;
+        border: 1px solid #EBEBEB;
+        ;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+
+
+        .source {
+            color: black;
+            &:hover {
+                color: $colorSmallItemsRed;
+                font-weight: bold;
+            }
+            &:visited{
+                font-weight: bold;
+            }
+        }
+
+       
+
+
+        .page__numbers {
+            color: #C4C4C4;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .page__btn {
+            font-weight: bold;
+        }
+
+        .page__btn:hover {
+            color: $colorSmallItemsRed;
+            transform: scale(1.5);
+        }
+
+    }
+
+}
+
+
+
 
 /* footer************************ */
 
@@ -1307,10 +1395,6 @@ a {
     padding-top: 64px;
 }
 
-// .footerCartVersion {
-//     height: 693px;
-// }
-
 .footer_left_content {
     display: flex;
     justify-content: center;
@@ -1327,7 +1411,6 @@ a {
 
 .footer_woomen {
     width: 120px;
-    // margin-top: 64px;
     margin-bottom: 30px;
 }
 
@@ -1440,6 +1523,9 @@ a {
 .icon_box:hover {
     background-color: #F16D7F;
 }
+.icon_box:hover path {
+    fill: white;
+}
 
 
 
@@ -1470,10 +1556,7 @@ a {
         .catalog {
             margin-left: 16px;
 
-            &__filter {}
-
             &__search {
-
                 left: 41%;
                 transform: none;
 
@@ -1526,6 +1609,52 @@ a {
             }
         }
     }
+
+    // Регистрация
+
+    .registration {
+        gap: 22px;
+        margin-top: 40px;
+
+        &__left {
+            .personForm {
+                .input {
+                    margin-bottom: 31px;
+                }
+
+                .input:last-child {}
+
+                .button {
+                    p {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+
+        &__right {
+            max-width: 354px;
+
+            .title {
+                font-size: 16px;
+                margin-bottom: 32px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 22px;
+            }
+
+            .offer {
+                .list {
+                    font-size: 16px;
+                }
+            }
+
+        }
+    }
+
+
 
     .middle {
         display: grid;
@@ -1616,6 +1745,16 @@ a {
         align-items: center;
     }
 
+    .box {
+        .header {
+            gap: 15%;
+        }
+
+        .profile {
+            margin-right: 0;
+        }
+    }
+
     .right_content {
         align-items: center;
         gap: 15px;
@@ -1639,7 +1778,6 @@ a {
     }
 
     .left_img_man,
-    .profile,
     .basket_box {
         display: none;
     }
@@ -1742,6 +1880,51 @@ a {
         }
     }
 
+    // Регистрация
+
+    .registration {
+        gap: 40px;
+        margin: 40px 8px 96px 8px;
+        flex-wrap: wrap;
+
+        &__left {
+            .personForm {
+                .input {
+                    margin-bottom: 15px;
+                }
+
+                .input:last-child {}
+
+                .button {
+                    p {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+
+        &__right {
+            max-width: 354px;
+
+            .title {
+                font-size: 16px;
+                margin-bottom: 32px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 22px;
+            }
+
+            .offer {
+                .list {
+                    font-size: 16px;
+                }
+            }
+
+        }
+    }
+
 
     .box {
         .burger_box {
@@ -1753,6 +1936,9 @@ a {
             }
         }
     }
+
+
+
 
     .top_content {
         min-height: 363px;
@@ -1830,12 +2016,12 @@ a {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-evenly;
-        height: 143px;
+        height: 243px;
         gap: 20px;
     }
 
     .rights {
-        margin-bottom: 30px;
+        margin-bottom: 100px;
     }
 
     .icons {
@@ -1854,6 +2040,16 @@ a {
         align-items: center;
     }
 
+    .box {
+        .header {
+            gap: 25%;
+        }
+
+        .profile {
+            margin-right: 0;
+        }
+    }
+
     .right_content {
         align-items: center;
         gap: 15px;
@@ -1865,8 +2061,7 @@ a {
     }
 
     .header_right {
-        gap: 10px !important;
-        margin-right: 50px;
+        margin-right: 40px;
     }
 
     .rectangle {
@@ -1883,7 +2078,6 @@ a {
     }
 
     .left_img_man,
-    .profile,
     .basket_box {
         display: none;
     }
@@ -1944,6 +2138,15 @@ a {
                         .menu {
                             margin-left: 0;
                         }
+
+                        .me2 {
+                            margin-left: -30px;
+                        }
+
+                        .me3 {
+                            margin-left: -40px;
+                        }
+
                     }
                 }
             }
@@ -2113,6 +2316,53 @@ a {
     }
 
 
+
+    // Регистрация
+
+    .registration {
+        gap: 40px;
+        margin: 40px 8px 96px 8px;
+        flex-wrap: wrap;
+
+        &__left {
+            .personForm {
+                .input {
+                    margin-bottom: 15px;
+                }
+
+                .input:last-child {}
+
+                .button {
+                    p {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+
+        &__right {
+            max-width: 354px;
+
+            .title {
+                font-size: 16px;
+                margin-bottom: 32px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 22px;
+            }
+
+            .offer {
+                .list {
+                    font-size: 16px;
+                }
+            }
+
+        }
+    }
+
+
     .box {
 
         .burger_box {
@@ -2154,6 +2404,8 @@ a {
             }
         }
     }
+
+
 
     .middle {
         display: grid;
@@ -2228,12 +2480,12 @@ a {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-evenly;
-        height: 143px;
+        height: 243px;
         gap: 40px;
     }
 
     .rights {
-        margin-bottom: 9px;
+        margin-bottom: 100px;
     }
 
     .icons {
