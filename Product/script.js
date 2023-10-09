@@ -1,6 +1,7 @@
 "use strict";
 
-fetch("data.json")
+try {
+  fetch("data.json")
   .then((response) => response.json())
   .then((data) => {
     const cardsDiv = document.querySelector(".feture_box");
@@ -24,6 +25,16 @@ fetch("data.json")
         </div>
       </a> `;
 
-      cardsDiv.insertAdjacentHTML("beforeend", productElem);
+      if(!cardsDiv){
+        console.error('Element .feture_box not found');
+        return;
+      } else{
+        cardsDiv.insertAdjacentHTML("beforeend", productElem);
+      }
+      
     });
   });
+} catch (error) {
+  console.log(error);
+}
+
