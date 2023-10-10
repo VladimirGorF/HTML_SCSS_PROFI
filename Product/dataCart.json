@@ -1,0 +1,58 @@
+[
+{
+  "image": "img/S1.svg",
+  "card_name": "Kurtka Super",
+  "price": "300",
+  "color": "Red",
+  "size": "XL",
+  "quantity": 2,
+  "max": "10"
+},
+{
+  "image": "img/S3.svg",
+  "card_name": "Kalosha Neochen",
+  "price": "300",
+  "color": "Red",
+  "size": "XL",
+  "quantity": 2,
+  "max": "10"
+},
+{
+  "image": "img/S4.svg",
+  "card_name": "Shtanzi Znatnie",
+  "price": "300",
+  "color": "Red",
+  "size": "XL",
+  "quantity": 2,
+  "max": "10"
+},
+{
+  "image": "img/S5.svg",
+  "card_name": "Capusshon",
+  "price": "300",
+  "color": "Red",
+  "size": "XL",
+  "quantity": 2,
+  "max": "10"
+},
+{
+  "image": "img/S6.svg",
+  "card_name": "Varezhki",
+  "price": "300",
+  "color": "Red",
+  "size": "XL",
+  "quantity": 2,
+  "max": "10"
+},
+{
+  "image": "img/S1.svg",
+  "card_name": "Somoletnaya ecipirovak",
+  "price": "300",
+  "color": "Red",
+  "size": "XL",
+  "quantity": 2,
+  "max": "10"
+}
+]
+
+
