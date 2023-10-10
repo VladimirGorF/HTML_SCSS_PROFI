@@ -1,71 +1,116 @@
 @keyframes duck-fly-1 {
   0% {
     left: -120px;
-    top: 90vh;
+    top: 38vh;
   }
   50% {
-    left: 56vh;
-    top: 14vh;
+    left: 60vh;
+    top: 19vh;
   }
   100% {
     left: 100vw;
-    top: 67vh;
+    top: 40vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-2 {
   0% {
     left: -120px;
-    top: 54vh;
+    top: 56vh;
   }
   50% {
-    left: 29vh;
-    top: 49vh;
+    left: 20vh;
+    top: 2vh;
   }
   100% {
     left: 100vw;
-    top: 4vh;
+    top: 73vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-3 {
   0% {
     left: -120px;
-    top: 12vh;
+    top: 81vh;
   }
   50% {
-    left: 1vh;
-    top: 11vh;
+    left: 36vh;
+    top: 35vh;
   }
   100% {
     left: 100vw;
-    top: 3vh;
+    top: 32vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-4 {
   0% {
     left: -120px;
-    top: 53vh;
+    top: 67vh;
   }
   50% {
-    left: 20vh;
-    top: 68vh;
+    left: 18vh;
+    top: 4vh;
   }
   100% {
     left: 100vw;
-    top: 46vh;
+    top: 82vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-5 {
   0% {
     left: -120px;
+    top: 34vh;
+  }
+  50% {
+    left: 39vh;
+    top: 50vh;
+  }
+  100% {
+    left: 100vw;
+    top: 66vh;
+    visibility: hidden;
+  }
+}
+@keyframes duck-fly-6 {
+  0% {
+    left: -120px;
     top: 49vh;
   }
   50% {
+    left: 40vh;
+    top: 13vh;
+  }
+  100% {
+    left: 100vw;
+    top: 38vh;
+    visibility: hidden;
+  }
+}
+@keyframes duck-fly-7 {
+  0% {
+    left: -120px;
+    top: 36vh;
+  }
+  50% {
+    left: 44vh;
+    top: 88vh;
+  }
+  100% {
+    left: 100vw;
+    top: 80vh;
+    visibility: hidden;
+  }
+}
+@keyframes duck-fly-8 {
+  0% {
+    left: -120px;
+    top: 20vh;
+  }
+  50% {
     left: 37vh;
-    top: 45vh;
+    top: 50vh;
   }
   100% {
     left: 100vw;
@@ -73,108 +118,63 @@
     visibility: hidden;
   }
 }
-@keyframes duck-fly-6 {
-  0% {
-    left: -120px;
-    top: 59vh;
-  }
-  50% {
-    left: 43vh;
-    top: 61vh;
-  }
-  100% {
-    left: 100vw;
-    top: 75vh;
-    visibility: hidden;
-  }
-}
-@keyframes duck-fly-7 {
-  0% {
-    left: -120px;
-    top: 42vh;
-  }
-  50% {
-    left: 36vh;
-    top: 48vh;
-  }
-  100% {
-    left: 100vw;
-    top: 51vh;
-    visibility: hidden;
-  }
-}
-@keyframes duck-fly-8 {
-  0% {
-    left: -120px;
-    top: 35vh;
-  }
-  50% {
-    left: 13vh;
-    top: 30vh;
-  }
-  100% {
-    left: 100vw;
-    top: 17vh;
-    visibility: hidden;
-  }
-}
 @keyframes duck-fly-9 {
   0% {
     left: -120px;
-    top: 45vh;
+    top: 80vh;
   }
   50% {
-    left: 33vh;
-    top: 45vh;
+    left: 37vh;
+    top: 43vh;
   }
   100% {
     left: 100vw;
-    top: 50vh;
+    top: 78vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-10 {
   0% {
     left: -120px;
-    top: 88vh;
+    top: 62vh;
   }
   50% {
-    left: 40vh;
-    top: 56vh;
+    left: 25vh;
+    top: 54vh;
   }
   100% {
     left: 100vw;
-    top: 62vh;
+    top: 69vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-11 {
   0% {
     left: -120px;
-    top: 75vh;
+    top: 56vh;
   }
   50% {
-    left: 2vh;
+    left: 28vh;
     top: 51vh;
   }
   100% {
     left: 100vw;
-    top: 90vh;
+    top: 71vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-12 {
   0% {
     left: -120px;
-    top: 10vh;
+    top: 52vh;
   }
   50% {
-    left: 53vh;
-    top: 52vh;
+    left: 22vh;
+    top: 8vh;
   }
   100% {
     left: 100vw;
-    top: 57vh;
+    top: 43vh;
     visibility: hidden;
   }
 }
@@ -393,6 +393,69 @@
     font-size: 30px;
   }
 }
+.cards {
+  margin-bottom: 40px;
+}
+.cards__title {
+  margin-top: 96px;
+  text-align: center;
+  color: #222;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 64px;
+}
+.cards__item {
+  display: flex;
+  margin-left: 230px;
+  margin-bottom: 40px;
+  width: 652px;
+  height: 306px;
+  border: 1px solid;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.cards:last-child {
+  margin-bottom: 96px;
+}
+.cards__image {
+  width: 262px;
+}
+.cards__xButton {
+  height: 22px;
+  display: flex;
+  margin-top: 28px;
+  margin-right: 22px;
+  border: none;
+  background-color: white;
+}
+.cards__desc {
+  padding: 22px 57px 62px 31px;
+}
+.cards__heading {
+  color: #222;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 42px;
+  width: 262px;
+  height: 58px;
+}
+.cards__txt {
+  color: #575757;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.cards__txt span {
+  color: red;
+}
+.cards__txt .quantity {
+  width: 44px;
+  text-align: center;
+  color: #656565;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 24px;
+}
+
 @keyframes vibrate-1 {
   0% {
     transform: translate(0);
