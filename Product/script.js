@@ -7,7 +7,7 @@ try {
       const cardsDiv = document.querySelector(".feture_box");
       data.forEach(({ image, card_name, description, price }) => {
         const productElem = ` 
-      <a href="#" class="feture_items">
+      <a  class="feture_items">
 
         <div class="item2_img_box">
           <img src=${image} alt="image item" class="fet_image">
@@ -112,6 +112,9 @@ try {
 
                 const closArr = document.querySelectorAll(".cards__xButton");
                 closArr.forEach((elem) => {
+                  elem.addEventListener("mouseenter", function () {
+                    closArr.classList.add();
+                  });
                   elem.addEventListener("click", function () {
                     elem.closest(".cards").remove();
                     if (
@@ -138,5 +141,3 @@ try {
 } catch (error) {
   console.log(error);
 }
-
-

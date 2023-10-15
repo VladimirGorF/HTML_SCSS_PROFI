@@ -1,41 +1,71 @@
 @keyframes duck-fly-1 {
   0% {
     left: -120px;
-    top: 38vh;
+    top: 32vh;
   }
   50% {
-    left: 60vh;
-    top: 19vh;
+    left: 45vh;
+    top: 34vh;
   }
   100% {
     left: 100vw;
-    top: 40vh;
+    top: 44vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-2 {
   0% {
     left: -120px;
-    top: 56vh;
+    top: 39vh;
   }
   50% {
-    left: 20vh;
-    top: 2vh;
+    left: 30vh;
+    top: 8vh;
   }
   100% {
     left: 100vw;
-    top: 73vh;
+    top: 14vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-3 {
   0% {
     left: -120px;
-    top: 81vh;
+    top: 19vh;
+  }
+  50% {
+    left: 42vh;
+    top: 47vh;
+  }
+  100% {
+    left: 100vw;
+    top: 58vh;
+    visibility: hidden;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -120px;
+    top: 38vh;
   }
   50% {
     left: 36vh;
-    top: 35vh;
+    top: 88vh;
+  }
+  100% {
+    left: 100vw;
+    top: 68vh;
+    visibility: hidden;
+  }
+}
+@keyframes duck-fly-5 {
+  0% {
+    left: -120px;
+    top: 54vh;
+  }
+  50% {
+    left: 32vh;
+    top: 41vh;
   }
   100% {
     left: 100vw;
@@ -43,138 +73,108 @@
     visibility: hidden;
   }
 }
-@keyframes duck-fly-4 {
-  0% {
-    left: -120px;
-    top: 67vh;
-  }
-  50% {
-    left: 18vh;
-    top: 4vh;
-  }
-  100% {
-    left: 100vw;
-    top: 82vh;
-    visibility: hidden;
-  }
-}
-@keyframes duck-fly-5 {
-  0% {
-    left: -120px;
-    top: 34vh;
-  }
-  50% {
-    left: 39vh;
-    top: 50vh;
-  }
-  100% {
-    left: 100vw;
-    top: 66vh;
-    visibility: hidden;
-  }
-}
 @keyframes duck-fly-6 {
   0% {
     left: -120px;
-    top: 49vh;
+    top: 18vh;
   }
   50% {
-    left: 40vh;
-    top: 13vh;
+    left: 31vh;
+    top: 31vh;
   }
   100% {
     left: 100vw;
-    top: 38vh;
+    top: 20vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-7 {
   0% {
     left: -120px;
-    top: 36vh;
+    top: 87vh;
   }
   50% {
-    left: 44vh;
-    top: 88vh;
+    left: 31vh;
+    top: 33vh;
   }
   100% {
     left: 100vw;
-    top: 80vh;
+    top: 79vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-8 {
   0% {
     left: -120px;
-    top: 20vh;
+    top: 37vh;
   }
   50% {
-    left: 37vh;
-    top: 50vh;
+    left: 1vh;
+    top: 65vh;
   }
   100% {
     left: 100vw;
-    top: 13vh;
+    top: 2vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-9 {
   0% {
     left: -120px;
-    top: 80vh;
+    top: 7vh;
   }
   50% {
-    left: 37vh;
-    top: 43vh;
+    left: 21vh;
+    top: 86vh;
   }
   100% {
     left: 100vw;
-    top: 78vh;
+    top: 35vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-10 {
   0% {
     left: -120px;
-    top: 62vh;
+    top: 15vh;
   }
   50% {
-    left: 25vh;
-    top: 54vh;
+    left: 39vh;
+    top: 80vh;
   }
   100% {
     left: 100vw;
-    top: 69vh;
+    top: 52vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-11 {
   0% {
     left: -120px;
-    top: 56vh;
+    top: 67vh;
   }
   50% {
-    left: 28vh;
-    top: 51vh;
+    left: 19vh;
+    top: 33vh;
   }
   100% {
     left: 100vw;
-    top: 71vh;
+    top: 75vh;
     visibility: hidden;
   }
 }
 @keyframes duck-fly-12 {
   0% {
     left: -120px;
-    top: 52vh;
+    top: 77vh;
   }
   50% {
-    left: 22vh;
-    top: 8vh;
+    left: 16vh;
+    top: 31vh;
   }
   100% {
     left: 100vw;
-    top: 43vh;
+    top: 30vh;
     visibility: hidden;
   }
 }
@@ -426,6 +426,10 @@
   margin-right: 22px;
   border: none;
   background-color: white;
+  transition: 0.3s;
+}
+.cards__xButton:hover {
+  transform: scale(1.4);
 }
 .cards__desc {
   padding: 22px 57px 62px 31px;

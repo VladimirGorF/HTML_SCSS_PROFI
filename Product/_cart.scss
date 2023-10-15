@@ -22,7 +22,7 @@
         box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
     }
 
-    &:last-child{
+    &:last-child {
         margin-bottom: 96px;
     }
 
@@ -37,7 +37,14 @@
         margin-right: 22px;
         border: none;
         background-color: white;
+        transition: 0.3s;
+
     }
+
+    &__xButton:hover {
+        transform: scale(1.4);
+    }
+
 
     &__desc {
         padding: 22px 57px 62px 31px;
