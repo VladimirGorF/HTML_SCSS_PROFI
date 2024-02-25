@@ -141,7 +141,7 @@ $countDuck: 12;
 
     .count-info {
         position: absolute;
-        left: 80%;
+        left: 90%;
         transform: translate(-50%);
         top: 66px;
         color: white;
@@ -209,7 +209,7 @@ $countDuck: 12;
         }
     }
 
-    .but_2{
+    .but_2 {
         animation: back 0.5s 24s linear both;
     }
 
@@ -239,7 +239,7 @@ $countDuck: 12;
         }
 
         .count-info {
-
+            left: 90%;
             font-size: 30px;
         }
 
